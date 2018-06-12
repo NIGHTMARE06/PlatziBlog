@@ -1,0 +1,193 @@
+/************ Reusable ************/
+body {
+  margin: 0;
+  font-family: 'Amaranth', sans-serif;
+  background-color: #EDEBEB;
+}
+
+.btn {
+  font-family: 'Amaranth', sans-serif;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login {
+  background-color: #EB4A4A;
+  padding: 7px 10px;
+}
+
+.btn-page {
+  background-color: #173B4F;
+  padding: 6px 15px;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.pagination-container {
+  width: 500px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************ Header ************/
+.header {
+  background-color: #173B4F;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.header img {
+  display: inline-block;
+  margin: 10px;
+}
+
+nav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+nav .btn {
+  margin-left: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 1.2em;
+  color: white;
+  transition: 0.8s;
+}
+
+nav li::after {
+  content: "|";
+  padding-left: 10px;
+}
+
+nav a {
+  color: white;
+}
+
+/************ Front page ************/
+.front {
+  margin-top: 20px;
+  padding-top: 60px;
+}
+
+#front-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+#front-title {
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  left: 280px;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: rgba(240,240,240,.89);
+  border-radius: 10px;
+  color: #424242;
+  z-index: 0;
+}
+
+#front-title hr {
+  border: 1px solid #424242;
+}
+
+#front-author {
+  display: flex;
+  justify-content: space-between;
+}
+
+/************ Articles ************/
+.row {
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles {
+  margin-top: 20px;
+}
+
+.row {
+  height: 300px;
+}
+
+.article {
+  width: 30%;
+  height: 300px;
+  color: #3D3D3D;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F4F4;
+  padding: 10px;
+  transition: 300ms;
+}
+
+.article:hover {
+  background-color: #ECECEC;
+  color: #2F2F2F;
+}
+
+.article img {
+  width: 200px;
+  border: 2px solid #204261;
+  border-radius: 8px;
+  margin: auto;
+  transition: 300ms;
+}
+
+.article:hover img {
+  transform: scale(0.9);
+}
+
+.article h2 {
+  margin-top: 2;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.article hr {
+  margin: 0;
+}
+
+.article-author {
+  display: flex;
+  justify-content: space-between;
+}
+
+/************ Pagination ************/
+.pagination {
+  margin-top: 50px;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination li {
+  font-size: 1.2em;
+}

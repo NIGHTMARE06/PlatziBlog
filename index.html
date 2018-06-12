@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Platzi Blog</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="./res/logo.png" alt="Platzi logo">
+
+    <nav>
+      <ul>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Horarios</a></li>
+        <li><a href="#">Live</a></li>
+        <button class="btn btn-login">Inicia sesion</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Front page -->
+  <section class="front">
+    <div class="container">
+      <img src="./res/garage.jpg" alt="Garage" id="front-image">
+
+      <div id="front-title">
+        <h2>Challenge accepted</h2>
+        <hr>
+        <div id="front-author">
+          <p><i class="fas fa-user-circle fa-lg"></i> Alan Santiago</p>
+          <p>junio 12 2018</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="articles">
+    <div class="container">
+      <div class="row">
+        <article class="article">
+          <img src="./res/platzi.jpg" alt="Go">
+          <h2>¿Por que Platzi es la mejor en lo que hace?</h2>
+          <hr>
+          <div class="article-author">
+            <p><i class="fas fa-user-circle fa-lg"></i> Freddy Vega</p>
+            <p>enero 8 2018</p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./res/cvander.jpg" alt="Go">
+          <h2>¿Cvander News o el noticiero comun?</h2>
+          <hr>
+          <div class="article-author">
+            <p><i class="fas fa-user-circle fa-lg"></i> Christian Van Der Henst</p>
+            <p>mayo 8 2018</p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./res/reactjs.png" alt="Go">
+          <h2>¿React.js es el mejor framework para Javascript?</h2>
+          <hr>
+          <div class="article-author">
+            <p><i class="fas fa-user-circle fa-lg"></i> Leonidas Esteban</p>
+            <p>junio 8 2018</p>
+          </div>
+        </article>
+      </div>
+      <div class="row">
+        <article class="article">
+          <img src="./res/javascript.png" alt="Go">
+          <h2>Javascript, ¿Por que es el mejor lenguaje de programacion?</h2>
+          <hr>
+          <div class="article-author">
+            <p><i class="fas fa-user-circle fa-lg"></i> Sacha Lifszyc</p>
+            <p>febrero 8 2018</p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./res/nodejs.jpg" alt="Go">
+          <h2>Node.js vs Go vs PHP</h2>
+          <hr>
+          <div class="article-author">
+            <p><i class="fas fa-user-circle fa-lg"></i> Julián Duque</p>
+            <p>julio 9 2018</p>
+          </div>
+        </article>
+        <article class="article">
+          <img src="./res/telescope.jpg" alt="Go">
+          <h2>¿Fue justo el juicio?</h2>
+          <hr>
+          <div class="article-author">
+            <p><i class="fas fa-user-circle fa-lg"></i> Galileo Galilei</p>
+            <p>febrero 8 2018</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  <footer class="pagination">
+    <div class="pagination-container">
+      <ul>
+        <li>Pagina 1 de 23</li>
+        <li><a href="#" class="btn btn-page">1</a></li>
+        <li><a href="#" class="btn btn-page">2</a></li>
+        <li><a href="#" class="btn btn-page">3</a></li>
+        <li><a href="#" class="btn btn-page">4</a></li>
+        <li><a href="#" class="btn btn-page">5</a></li>
+        <li><a href="#" class="btn btn-page">Next</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
