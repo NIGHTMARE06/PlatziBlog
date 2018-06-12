@@ -17,11 +17,18 @@ body {
 .btn-login {
   background-color: #EB4A4A;
   padding: 7px 10px;
+  border-bottom: 3px solid #C82929;
 }
 
 .btn-page {
   background-color: #173B4F;
   padding: 6px 15px;
+}
+
+.active {
+  display: inline-block;
+  border-top: 4px solid #2BC132;
+  line-height: 50px;
 }
 
 .container {
@@ -44,23 +51,30 @@ a {
 
 /************ Header ************/
 .header {
-  background-color: #173B4F;
+  background: linear-gradient(to right, #113245, #214960);
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .header img {
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 nav {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+}
+
+nav ul {
+  margin: 0;
 }
 
 nav .btn {
@@ -69,19 +83,30 @@ nav .btn {
 
 nav li {
   display: inline-block;
-  margin-left: 15px;
+  padding-left: 15px;
   font-size: 1.2em;
   color: white;
-  transition: 0.8s;
+  padding: 0;
+}
+
+nav a:hover {
+  border-top: 4px solid #EC4343;
+  display: inline-block;
+  /* margin-left: 0; */
+  line-height: 50px;
 }
 
 nav li::after {
   content: "|";
-  padding-left: 10px;
+  /* padding-left: 10px; */
+  margin: 0;
 }
 
 nav a {
   color: white;
+  transition: 400ms;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 /************ Front page ************/
@@ -161,6 +186,7 @@ nav a {
 
 .article:hover img {
   transform: scale(0.9);
+  opacity: 0.8;
 }
 
 .article h2 {
